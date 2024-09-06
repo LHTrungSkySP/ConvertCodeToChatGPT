@@ -1,0 +1,6 @@
+# ignore bin and obj
+[Bb]in/
+[Oo]bj/ 
+# ignore .vs
+.vs/
+.log/
