@@ -103,15 +103,6 @@ namespace ConvertCodeToChatGPT
         }
 
         // Phương thức cập nhật ProgressBar
-        private void UpdateProgressBar(int filesProcessed, int totalFiles)
-        {
-            // Sử dụng Dispatcher để cập nhật giao diện người dùng từ luồng khác
-            Dispatcher.Invoke(() =>
-            {
-                double progress = (double)filesProcessed / totalFiles * 100;
-                progressBar.Value = progress;
-            });
-        }
 
         private void Raw(object sender, RoutedEventArgs e)
         {

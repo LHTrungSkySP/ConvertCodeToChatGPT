@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ConvertCodeToChatGPT"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="754" Width="1062">
+    <Grid Margin="0,0,71,46">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -14,11 +14,10 @@
         <TextBlock Text="Project Path:" VerticalAlignment="Center" Margin="0,0,558,0"/>
         <TextBox x:Name="txtProjectPath" VerticalAlignment="Top" Margin="86,5,461,0"/>
         <!--<Button Content="Merge Files" Click="Merge_Click" Width="98" Margin="475,6,227,403" RenderTransformOrigin="0.461,-1.052" Grid.RowSpan="2"/>-->
-        <TextBox x:Name="txtOutput" Grid.Row="1" Margin="10,35,10,10" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
-        <ProgressBar x:Name="progressBar" Margin="508,5,10,409" Height="20" Minimum="0" Maximum="100" Value="0" Grid.RowSpan="2"/>
-        <Button Content="Browser" Click="Browse_Click" HorizontalAlignment="Left" Margin="356,5,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
-        <Button Content="Merge Files" Click="Merge_Click" HorizontalAlignment="Left" Margin="418,5,0,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
-        <Button Content="Raw Infrastructure" Click="Raw" HorizontalAlignment="Left" Margin="356,10,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtOutput" Grid.Row="1" Margin="10,10,-58,-45" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+        <Button Content="Browser" Click="Browse_Click" HorizontalAlignment="Left" Margin="757,5,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <Button Content="Merge Files" Click="Merge_Click" HorizontalAlignment="Left" Margin="549,5,0,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+        <Button Content="Raw Infrastructure" Click="Raw" HorizontalAlignment="Left" Margin="633,5,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
     </Grid>
 
 </Window>
